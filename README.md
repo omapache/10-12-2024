@@ -48,12 +48,19 @@ Esta es una aplicación de gestión de tareas desarrollada en Python utilizando 
 - **Eliminar Tareas**: Haz clic en el botón "Eliminar" junto a la tarea.
 - **Exportar/Importar Tareas**: Usa los botones de exportar e importar para manejar archivos JSON de tareas.
 
+## Visualización de la Base de Datos
+
+Para visualizar correctamente el archivo `.db`, puedes utilizar la extensión SQLite Viewer en visual studio code.
+
 ## Contribuciones
 
 Las contribuciones son bienvenidas. Por favor, abre un issue o un pull request para discutir cualquier cambio que desees realizar.
 
-
 ## Uso de sonarScanner
 
-como pueden ver el resultado que me dio el sonarScanner es el siguiente, para mas informacion dejare el pdf en la carpeta:
+Como pueden ver el resultado que me dio el sonarScanner es el siguiente, para más información dejaré el PDF en la carpeta:
 ![alt text](image.png)
+
+##
+por Owen 🦝
+![alt text](imagenFinal.jpg)
