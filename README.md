@@ -21,7 +21,7 @@ Esta es una aplicación de gestión de tareas desarrollada en Python utilizando 
 
 1. **Clonar el repositorio**:
    ```bash
-   git clone https://github.com/tu_usuario/tu_repositorio.git
+   git clone https://github.com/omapache/ToDoList-Python.git
    cd tu_repositorio
    ```
 

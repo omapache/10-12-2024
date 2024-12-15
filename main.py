@@ -136,20 +136,22 @@ with col1:
 with col2:
     st.subheader("Importar Tareas")
     uploaded_file = st.file_uploader("Importar tareas desde JSON")
+    
     if uploaded_file is not None:
-        try:
-            tareas_importadas = json.load(uploaded_file)
-            session = Session()
-            for tarea in tareas_importadas:
-                nueva_tarea = Tarea(
-                    titulo=tarea['titulo'],
-                    descripcion=tarea['descripcion'],
-                    completada=tarea['completada']
-                )
-                session.add(nueva_tarea)
-            session.commit()
-            session.close()
-            st.success("Tareas importadas correctamente")
-            st.rerun()
-        except Exception as e:
-            st.error(f"Error al importar tareas: {str(e)}")
+        if st.button("Importar Tareas"):
+            try:
+                tareas_importadas = json.load(uploaded_file)
+                session = Session()
+                for tarea in tareas_importadas:
+                    nueva_tarea = Tarea(
+                        titulo=tarea['titulo'],
+                        descripcion=tarea['descripcion'],
+                        completada=tarea['completada']
+                    )
+                    session.add(nueva_tarea)
+                st.success("Tareas importadas correctamente")
+                session.commit()
+                session.close()
+                st.rerun()
+            except Exception as e:
+                st.error(f"Error al importar tareas: {str(e)}")
